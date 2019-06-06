@@ -1,0 +1,248 @@
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+header {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+
+header h1 {
+    background-color: rgb(42, 51, 56);
+    color: white;
+    padding: 20px 0 20px;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+header h2 {
+    font-size: 1.25em;
+    padding-top: 10px;
+}
+
+header p {
+    padding: 0 7px;
+}
+
+header p,
+form p {
+    color: rgb(107, 122, 141);
+    padding-bottom: 25px;
+}
+
+header hr {
+    width: 90%;
+}
+
+form {
+    width: 93%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+legend {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+fieldset {
+    border-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container label {
+    padding: 20px 0 10px;
+    color: rgb(83, 93, 121);
+}
+
+.container input {
+    width: 90%;
+    height: 45px;
+    background-color: rgb(240, 240, 240);
+    border-style: none;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: solid 2px rgb(6, 44, 116);
+    box-shadow: none;
+}
+
+.container select {
+    width: 100%;
+    height: 45px;
+    background-color: rgb(240, 240, 240);
+    border-style: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    
+}
+
+input::placeholder {
+    text-align: right;
+    color: rgb(158, 154, 154);
+    font-style: italic;
+}
+
+#zip {
+    width: 40%;
+    margin-bottom: 25px;
+}
+
+form hr {
+    width: 98%;
+}
+
+            /*====== NEWSLETTER FIELDSET ====== */
+
+#newsletter {
+    padding-top: 20px;
+}
+
+#fieldset-newsletter p {
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+#nlf {
+    font-size: 1.1em;
+}
+
+#fieldset-newsletter label {
+    padding: 10px 0;
+    color: gray;
+}
+
+textarea {
+    background-color: rgb(236, 236, 236);
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto 25px auto;
+    width: 99%;
+    height: 100px;
+}
+
+button {
+    background-color: rgb(53, 163, 158);
+    width: 100%;
+    height: 60px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+#copyright {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 200px;
+    font-size: .9em;
+}
+
+#other-topics {
+    font-size: .9em;
+    padding-top: 10px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================== Media Queries =================== */
+
+@media(min-width: 768px) {
+
+    form {
+        width: 65%;
+    }
+
+    header h2,
+    header p,
+    header hr {
+        width: 65%;
+        margin: 20px auto;
+    }
+
+    header h2 {
+        margin-top: 35px;
+    }
+
+    header p {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+
+    .container label {
+        flex: 20%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container input,
+    .container select {
+        flex: 70%;
+        margin: 10px 0;
+        padding: 0 15px 0 15px;
+    }
+    
+    .container select {
+        margin-left: -27px;
+    }
+    
+
+    body hr {
+        margin-top: 25px;
+    }
+
+    #newsletter {
+        padding-top: 40px;
+    }
+
+    textarea {
+        padding: 0;
+        margin: 0 0 25px;
+        width: 100%;
+    }
+
+    #copyright {
+        margin-top: 40px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
