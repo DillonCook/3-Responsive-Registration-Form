@@ -75,15 +75,8 @@ fieldset {
     border-style: none;
     border-radius: 5px;
     padding: 0 15px;
+    margin: 0 auto;
 }
-
-input:focus,
-select:focus,
-textarea:focus {
-    border: solid 2px rgb(6, 44, 116);
-    box-shadow: none;
-}
-
 .container select {
     width: 100%;
     height: 45px;
@@ -91,7 +84,14 @@ textarea:focus {
     border-style: none;
     border-radius: 5px;
     padding: 0 15px;
-    
+    margin: 0 auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: solid 2px rgb(6, 44, 116);
+    box-shadow: none;
 }
 
 input::placeholder {
@@ -103,6 +103,7 @@ input::placeholder {
 #zip {
     width: 40%;
     margin-bottom: 25px;
+    margin-left: -0%;
 }
 
 form hr {
@@ -170,7 +171,11 @@ button {
 @media(min-width: 768px) {
 
     form {
-        width: 65%;
+        width: 70%;
+    }
+
+    legend {
+        margin-left: -4px;
     }
 
     header h2,
@@ -193,11 +198,11 @@ button {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        
+        justify-content: flex-start;
     }
 
     .container label {
-        flex: 20%;
+        flex: 25%;
         margin: 0;
         padding: 0;
     }
@@ -206,16 +211,29 @@ button {
     .container select {
         flex: 70%;
         margin: 10px 0;
-        padding: 0 15px 0 15px;
+        padding: 0 0 0 10px;
     }
     
-    .container select {
-        margin-left: -27px;
+    input::placeholder {
+        padding-right: 10px;
     }
-    
+
+    label[for="state"] {
+        margin-right: -10px;
+    }
+
+    #zip {
+        margin: 10px 0;
+        padding: 0;
+        flex: 0%        /*  This shrinks the zip code input down to half size instead of full width  */
+    }
+
+    label[for="zip"] {
+                        /* Do I need to modify this? So far, no success */
+    }
 
     body hr {
-        margin-top: 25px;
+        margin-top: 35px;
     }
 
     #newsletter {
@@ -231,6 +249,10 @@ button {
     #copyright {
         margin-top: 40px;
     }
+
+   
+
+   
 
 
 
