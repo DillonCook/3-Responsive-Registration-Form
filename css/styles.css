@@ -31,7 +31,7 @@ header p {
 
 header p,
 form p {
-    color: rgb(107, 122, 141);
+    color: rgb(94, 107, 124);
     padding-bottom: 25px;
 }
 
@@ -69,12 +69,11 @@ fieldset {
 }
 
 .container input {
-    width: 90%;
+    width: 100%;
     height: 45px;
     background-color: rgb(240, 240, 240);
     border-style: none;
     border-radius: 5px;
-    padding: 0 15px;
     margin: 0 auto;
 }
 .container select {
@@ -83,7 +82,6 @@ fieldset {
     background-color: rgb(240, 240, 240);
     border-style: none;
     border-radius: 5px;
-    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -209,12 +207,9 @@ button {
 
     .container input,
     .container select {
-        width: 70%;
+        width: 75%;
         margin: 10px 0;
-        padding: 0 0 0 10px;
-    }
-    .container select {
-        width: 71.55%;
+        padding: 0;
     }
     
     input::placeholder {
@@ -222,13 +217,20 @@ button {
     }
 
     #zip {
-        margin: 10px 0;
+        margin: 10px 0 40px;
         padding: 0;
-        width: 25%;
+        width: 30%;
     }
 
-    body hr {
+    header hr {
         margin-top: 35px;
+        width: 70%;
+        border: 1px solid rgb(88, 88, 88);
+    }
+
+    form hr {
+        width: 100%;
+        border: 1px solid rgb(88, 88, 88);
     }
 
     #newsletter {
@@ -243,6 +245,7 @@ button {
 
     #copyright {
         margin-top: 40px;
+        font-size: .85em;
     }
 
    
