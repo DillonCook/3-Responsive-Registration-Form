@@ -91,7 +91,7 @@ textarea:focus {
     border: solid 1px rgb(122, 167, 252);
     box-shadow: 0 0 10px 2px rgb(25, 125, 255);
     background-color: rgb(181, 227, 253);
-    transition: box-shadow 1s;
+    transition: box-shadow .5s;
 }
 
 input::placeholder {
