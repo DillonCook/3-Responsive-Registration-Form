@@ -207,9 +207,14 @@ button {
 
     .container input,
     .container select {
-        width: 75%;
+        width: 74%;
         margin: 10px 0;
         padding: 0;
+    }
+
+    .container label,
+    .container-2 label {
+        font-size: .85em;
     }
     
     input::placeholder {
