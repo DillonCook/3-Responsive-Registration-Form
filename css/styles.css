@@ -202,34 +202,29 @@ button {
     }
 
     .container label {
-        flex: 25%;
+        flex: 0 25%;
         margin: 0;
         padding: 0;
     }
 
     .container input,
     .container select {
-        flex: 70%;
+        width: 70%;
         margin: 10px 0;
         padding: 0 0 0 10px;
+    }
+    .container select {
+        width: 71.55%;
     }
     
     input::placeholder {
         padding-right: 10px;
     }
 
-    label[for="state"] {
-        margin-right: -10px;
-    }
-
     #zip {
         margin: 10px 0;
         padding: 0;
-        flex: 0%        /*  This shrinks the zip code input down to half size instead of full width  */
-    }
-
-    label[for="zip"] {
-                        /* Do I need to modify this? So far, no success */
+        width: 25%;
     }
 
     body hr {
@@ -241,7 +236,7 @@ button {
     }
 
     textarea {
-        padding: 0px;
+        padding: 0;
         margin: 0 0 25px;
         width: 100%;
     }
