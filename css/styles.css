@@ -88,8 +88,10 @@ fieldset {
 input:focus,
 select:focus,
 textarea:focus {
-    border: solid 2px rgb(6, 44, 116);
-    box-shadow: none;
+    border: solid 1px rgb(122, 167, 252);
+    box-shadow: 0 0 10px 2px rgb(25, 125, 255);
+    background-color: rgb(181, 227, 253);
+    transition: box-shadow 1s;
 }
 
 input::placeholder {
@@ -222,7 +224,7 @@ button {
     }
 
     #zip {
-        margin: 10px 0 40px;
+        margin: 10px 0;
         padding: 0;
         width: 30%;
     }
@@ -234,6 +236,7 @@ button {
     }
 
     form hr {
+        margin-top: 40px;
         width: 100%;
         border: 1px solid rgb(88, 88, 88);
     }
@@ -251,6 +254,10 @@ button {
     #copyright {
         margin-top: 40px;
         font-size: .85em;
+    }
+
+    footer {
+        background-color: gray;
     }
 
    
