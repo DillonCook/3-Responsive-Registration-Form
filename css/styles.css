@@ -245,7 +245,7 @@ button {
         padding-top: 40px;
     }
 
-    textarea {
+    #comments {
         padding: 0;
         margin: 0 0 25px;
         width: 100%;
@@ -255,26 +255,6 @@ button {
         margin-top: 40px;
         font-size: .85em;
     }
-
-    footer {
-        background-color: gray;
-    }
-
-   
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 

@@ -34,8 +34,8 @@
                 <label for="city">City</label>
                 <input type="text" id="city" name="city" placeholder="Required &nbsp; &nbsp; &nbsp;" required>
                 <label for="state">State</label>
-                <select required>
-                    <option value="default" disabled selected>&nbsp; &nbsp; &nbsp;Choose State</option>
+                <select required id="state">
+                    <option value="" selected>&nbsp; &nbsp; &nbsp;Choose State</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -100,18 +100,18 @@
             <p>Select the newsletters you would like to receive</p>
 
             <div class="container-2">
-            <label for="name"><input type="checkbox" id="name" name="newsletter">&nbsp;&nbsp;HTML News</label>
-            <label for="email"><input type="checkbox" id="email" name="newsletter">&nbsp;&nbsp;CSS News</label>
-            <label for="phone"><input type="checkbox" id="phone-number" name="newsletter">&nbsp;&nbsp;Javascript News</label>
+            <label for="html"><input type="checkbox" id="html" name="html-news">&nbsp;&nbsp;HTML News</label>
+            <label for="css"><input type="checkbox" id="css" name="css-news">&nbsp;&nbsp;CSS News</label>
+            <label for="javascript"><input type="checkbox" id="javascript" name="javascript-news">&nbsp;&nbsp;Javascript News</label>
 
             <p id="nlf">Newsletter format</p>
 
-            <label for=""><input type="radio" id="" name="newsletter-format">&nbsp;&nbsp;HTML</label>           
-            <label for=""><input type="radio" id="" name="newsletter-format">&nbsp;&nbsp;Plain text</label>
+            <label for="html-text"><input type="radio" id="html-text" name="html-text">&nbsp;&nbsp;HTML</label>           
+            <label for="plain-text"><input type="radio" id="plain-text" name="plain-text">&nbsp;&nbsp;Plain text</label>
             </div>
             <p id="other-topics">Other topics you'd like to hear about</p>
 
-            <textarea name="" id=""></textarea>
+            <textarea name="other-comments" id="comments"></textarea>
 
         </fieldset>
 
